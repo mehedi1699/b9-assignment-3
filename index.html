@@ -1,43 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<!-- daisy ui and tailwind cds link -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui and tailwind cds link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- tailwind custom color or something else -->
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    clifford: '#da373d',
+    <!-- tailwind custom color or something else -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bred: '#FF4240',
+                        tcolor:'rgba(19, 19, 24, 0.60)'
+                    }
                 }
             }
         }
-    }
-</script>
-<!-- simple style of css -->
-<style>
-    *{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
+    </script>
+    <!-- simple style of css -->
+    <style>
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
-<!-- fonw awesime link for icons -->
-<script src="https://kit.fontawesome.com/a5f16cf3f8.js" crossorigin="anonymous"></script>
+    <!-- fonw awesime link for icons -->
+    <script src="https://kit.fontawesome.com/a5f16cf3f8.js" crossorigin="anonymous"></script>
 
 
     <title>Document</title>
 </head>
-<body>
-    <h3>i am mehedi hasan</h3>
+
+<body class="mx-4 mt-2 lg:mx-20 lg:mt-4">
+    <header class="md:container md:mx-auto">
+        <!-- navbar style  -->
+        <nav>
+            <div class="navbar ">
+                <div class="flex-1 ">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-52">
+                            <li><a class="text-bred hover:text-black hover:bg-bred">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="  text-4xl font-extrabold">Hockey<span class="text-bred">’</span>s</a>
+                </div>
+                <div class="">
+                    <div class="navbar-center text-base hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 ">
+                            <li><a class="text-bred hover:text-black hover:bg-bred">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a
+                            class="btn btn-primary bg-bred border-none uppercase px-6 text-white hover:bg-sky-400">login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- meet all the heros section -->
+        <div class="mt-4 lg:h-3/4 relative">
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full  ">
+                    <img src="Images/1.png" class="w-full lg:h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white hover:bg-bred">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-bred">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full ">
+                    <img src="Images/p2.jpg" class="w-full  rounded-xl lg:h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class=" btn btn-circle bg-black text-white hover:bg-bred">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-bred">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full ">
+                    <img src="Images/p3.jpg" class="w-full  rounded-xl lg:h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-bred">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white hover:bg-bred">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full ">
+                    <img src="Images/p4.jpg" class="w-full \ rounded-xl lg:h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-bred">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-bred">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black text-white mt-8 lg:w-2/6 rounded-xl p-4 lg:absolute lg:right-60 lg:top-96 ">
+                <h3 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h3>
+                <p >in order to date hockey players you should know where to meet them. One of the best chances you have
+                    of meeting a single hockey player is at the team's home stadium. </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- professional hockeys club -->
+        <section>
+            <div class="text-center mt-4 lg:-mt-4 mb-8">
+                <h3 class="text-4xl font-extrabold ">Professional Hockeys Club</h3>
+                <p class="mt-4 text-tcolor">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    <br> Purus urna in sit nullam proin. </p>
+            </div>
+            <div class=" flex flex-col lg:flex-row lg:justify-between text-center m-4 gap-8">
+                <div class="my-4">
+                    <div class="radial-progress  " style="--value:87;padding: ;" role="progressbar">87%</div>
+                    <h3 class="text-xl font-bold">Prayer Facility</h3>
+                    <p class="text-tcolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:95; " role="progressbar">95%</div>
+                    <h3 class="text-xl font-bold">Experienced Coach</h3>
+                    <p class="text-tcolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress " style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-xl font-bold">Senior Player</h3>
+                    <p class="text-tcolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-xl font-bold">Training Ground</h3>
+                    <p class="text-tcolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
